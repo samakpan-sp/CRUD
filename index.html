@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Chat</title>
+    <link rel="shortcut icon" href="favicon-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+   
+    <h1>ChatApp</h1>
+   <div class="container">
+       <form id="form" action="">
+        <div id="left">
+            <textarea name="text1" id="input" 
+            placeholder="Type here..." cols="30" rows="5"></textarea> <br>
+            <div id="msg"></div><br>
+            <button type="submit"> post<i class="fa fa-send"></i></button>
+        </div>
+       </form>
+       <!-- Post section -->
+        <div id="right">
+            <h3>Your Posts here</h3>
+            <div id="posts">
+               
+                
+                <div>
+                    <p>Post 1</p>
+                    <span class="option">
+                    <i onclick="editPost(this)" class="fa fa-edit"></i>
+                    <i onclick="deletePost(this)" class="fa fa-trash-o"></i>
+                    </span>
+                
+                </div>
+                <div>
+                    <!-- <p>Post 2</p> -->
+                    <!-- <span class="option">
+                    <i onclick="editPost(this)" class="fa fa-edit"></i>
+                    <i onclick="deletePost(this)" class="fa fa-trash-o"></i>
+                    </span> -->
+                
+                </div>
+                
+            </div>
+    
+        </div>
+   </div>
+</center>
+
+   <script src="app.js"></script>
+</body>
+</html>
